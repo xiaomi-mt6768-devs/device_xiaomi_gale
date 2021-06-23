@@ -64,6 +64,10 @@ ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
 ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 
+# Chipset
+ro.soc.manufacturer=Mediatek
+ro.soc.model=MT6768
+
 # Display
 debug.sf.auto_latch_unsignaled=false
 debug.sf.disable_backpressure=1
