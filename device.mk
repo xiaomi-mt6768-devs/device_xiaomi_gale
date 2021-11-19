@@ -294,6 +294,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    SettingsResOverlayGale \
     FrameworksResOverlayGale \
     SystemUIOverlayGale \
     WifiResOverlayGale
