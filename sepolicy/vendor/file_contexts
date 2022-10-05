@@ -1,8 +1,13 @@
 # Batterysecret
 /(vendor|system/vendor)/bin/batterysecret                                                               u:object_r:batterysecret_exec:s0
 
+# Latency
+/dev/cpu_dma_latency                                                                                    u:object_r:latency_device:s0
+
 # Power
+<<<<<<< HEAD
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower@1\.2-service\.stub                  u:object_r:hal_power_exec:s0
+/vendor/bin/hw/android\.hardware\.power-service\.mediatek-libperfmgr                                    u:object_r:hal_power_default_exec:s0
 
 # Thermals
 /vendor/bin/mi_thermald                                                                                 u:object_r:mi_thermald_exec:s0

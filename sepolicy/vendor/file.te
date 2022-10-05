@@ -1,0 +1,5 @@
+# Latency
+type latency_device, dev_type;
+
+# PPS
+type pps_socket, file_type;
