@@ -264,7 +264,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.example \
+    android.hardware.power-service.mediatek-libperfmgr \
     android.hardware.power@1.3.vendor
 
 PRODUCT_PACKAGES += \
@@ -359,6 +359,8 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
     hardware/mediatek \
     hardware/xiaomi
 
