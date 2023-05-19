@@ -1,6 +1,8 @@
-#pragma once
+#ifndef ANDROID_HARDWARE_USB_V1_3_USB_H
+#define ANDROID_HARDWARE_USB_V1_3_USB_H
 
 #include <android-base/file.h>
+#include <android-base/properties.h>
 #include <android/hardware/usb/1.2/IUsbCallback.h>
 #include <android/hardware/usb/1.2/types.h>
 #include <android/hardware/usb/1.3/IUsb.h>
@@ -21,6 +23,8 @@ namespace V1_3 {
 namespace implementation {
 
 using ::android::sp;
+using ::android::base::GetProperty;
+using ::android::base::SetProperty;
 using ::android::base::WriteStringToFile;
 using ::android::hardware::hidl_array;
 using ::android::hardware::hidl_memory;
@@ -40,13 +44,6 @@ using ::android::hardware::usb::V1_2::PortStatus;
 using ::android::hardware::usb::V1_3::IUsb;
 using ::android::hidl::base::V1_0::DebugInfo;
 using ::android::hidl::base::V1_0::IBase;
-
-#define PULLUP_PATH "/config/usb_gadget/g1/UDC"
-constexpr char kGadgetName[] = "a600000.dwc3";
-#define SOC_PATH "/sys/devices/platform/soc/a600000.ssusb/"
-#define ID_PATH SOC_PATH "id"
-#define VBUS_PATH SOC_PATH "b_sess"
-#define USB_DATA_PATH SOC_PATH "usb_data_enabled"
 
 enum class HALVersion { V1_0, V1_1, V1_2, V1_3 };
 
@@ -81,3 +78,5 @@ struct Usb : public IUsb {
 }  // namespace usb
 }  // namespace hardware
 }  // namespace android
+
+#endif  // ANDROID_HARDWARE_USB_V1_3_USB_H
