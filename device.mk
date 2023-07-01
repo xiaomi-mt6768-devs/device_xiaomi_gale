@@ -50,6 +50,9 @@ PRODUCT_PACKAGES += \
     init.sensor_1_0.rc \
     ueventd.rc
 
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
