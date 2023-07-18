@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_PACKAGES += \
+    init.recovery.mt6768.rc
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
