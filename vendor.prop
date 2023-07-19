@@ -59,3 +59,7 @@ ro.vendor.pq.mtk_ultra_resolution_support=0
 ro.vendor.pq.mtk_video_transition=0
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
+
+# Trusted Execution Environment (TEE)
+ro.vendor.mtk_microtrust_tee_support=1
+
