@@ -34,7 +34,16 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
-# Partitions
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.memtrack-service.mediatek-mali \
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
+    libdrm.vendor
+
+# Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 PRODUCT_PACKAGES += \
