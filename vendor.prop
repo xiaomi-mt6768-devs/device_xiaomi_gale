@@ -60,6 +60,10 @@ ro.vendor.pq.mtk_video_transition=0
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
 
+# Keymaster
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.hardware.kmsetkey=beanpod
+
 # Trusted Execution Environment (TEE)
 ro.vendor.mtk_microtrust_tee_support=1
 
