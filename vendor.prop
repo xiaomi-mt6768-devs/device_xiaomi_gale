@@ -10,6 +10,14 @@ ro.vendor.audio.us.proximity_waitfornegative_feature=true
 vendor.audio.spkcal.copy.inhal=true
 vendor.audiohal.telephonytx.type=2
 
+# Bluetooth
+persist.bluetooth.a2dp_offload.cap=sbc-aac
+persist.bluetooth.a2dp_offload.disabled=true
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bt.platform=connac1x
+ro.vendor.mtk.bt_sap_enable=true
+vendor.bluetooth.ldac.abr=true
+
 # Display
 debug.sf.auto_latch_unsignaled=false
 debug.sf.disable_backpressure=1
