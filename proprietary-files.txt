@@ -1,5 +1,9 @@
 # Unpinned blobs from gale-user 12 SP1A.210812.016 V816.0.2.0.UGPMIXM release-keys
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
