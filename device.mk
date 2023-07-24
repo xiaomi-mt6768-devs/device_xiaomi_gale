@@ -196,6 +196,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Properties
+include $(LOCAL_PATH)/vendor_logtag.mk
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
