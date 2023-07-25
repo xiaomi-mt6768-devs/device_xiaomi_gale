@@ -90,6 +90,10 @@ PRODUCT_PACKAGES += \
     libdrm.vendor \
     libutils-v32
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 

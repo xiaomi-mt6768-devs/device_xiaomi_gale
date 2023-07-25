@@ -483,6 +483,13 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
 
+# DRM
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libwvhidl.so
+
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
