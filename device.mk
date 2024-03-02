@@ -143,5 +143,9 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.3.vendor \
     android.hardware.usb.gadget@1.1.vendor
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.mediatek
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/gale/gale-vendor.mk)
