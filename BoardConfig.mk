@@ -7,14 +7,8 @@
 DEVICE_PATH := device/xiaomi/gale
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-
-<<<<<<< HEAD
-=======
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-
 BUILD_BROKEN_DUP_RULES := true
 
->>>>>>> ce48a21 (gale: Allow broken duplicated rules)
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
@@ -105,6 +99,7 @@ BOARD_SUPER_PARTITION_SIZE := 7516192768
 BOARD_SUPER_PARTITION_GROUPS := mediatek_dynamic_partitions
 BOARD_MEDIATEK_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product
 BOARD_MEDIATEK_DYNAMIC_PARTITIONS_SIZE := 7516192768
+-include vendor/lineage/config/BoardConfigReservedSize.mk
 
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
