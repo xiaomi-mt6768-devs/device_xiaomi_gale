@@ -180,6 +180,11 @@ on late-fs
     mount_all /vendor/etc/fstab.mt6768 --late
 
 on post-fs-data
+    mkdir /data/vendor 0777 nfc nfc
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+    chmod 0777 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
 
     # boot time fs tune
     write /sys/block/mmcblk0/queue/iostats 0
