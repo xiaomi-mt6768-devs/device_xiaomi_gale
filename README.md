@@ -7,7 +7,7 @@ It was released in November 2023.
 | Basic                   | Spec Sheet                                                                                                                     |
 | -----------------------:|:------------------------------------------------------------------------------------------------------------------------------ |
 | CPU                     | Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)                                                 |
-| Chipset                 | MediaTek MT6769 Helio G85 (12 nm)                                                                                       |
+| Chipset                 | MediaTek MT6768 Helio G85 (12 nm)                                                                                       |
 | GPU                     | Mali-G52 MC2                                                                                                                   |
 | Memory                  | 4/6/8 GB RAM                                                                                                                     |
 | Shipped Android Version | 13.0                                                                                                                           |
