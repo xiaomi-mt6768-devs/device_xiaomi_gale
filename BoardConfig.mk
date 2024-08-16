@@ -6,6 +6,18 @@
 
 DEVICE_PATH := device/xiaomi/gale
 
+# A/B
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
+    system \
+    system_ext \
+    product \
+    vendor \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
@@ -27,6 +39,9 @@ TARGET_NO_BOOTLOADER := true
 # Platform
 TARGET_BOARD_PLATFORM := mt6769
 BOARD_HAS_MTK_HARDWARE := true
+
+# Recovery
+BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
