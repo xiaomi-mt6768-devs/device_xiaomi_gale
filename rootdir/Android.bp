@@ -61,8 +61,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.rc",
+    name: "ueventd.mt6768.rc",
     filename: "ueventd.rc",
-    src: "etc/ueventd.rc",
+    src: "etc/ueventd.mt6768.rc",
     vendor: true,
 }
