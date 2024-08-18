@@ -682,6 +682,11 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
 
+# Display firmware
+vendor/firmware/focaltech_ts_fw_boe.bin
+vendor/firmware/novatek_ts_hdl_fw.bin
+vendor/firmware/novatek_ts_hdl_mp.bin
+
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
