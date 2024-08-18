@@ -581,9 +581,9 @@ vendor/lib/egl/libMEOW_trace.so
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so
-vendor/lib/mt6768/libdpframework.so:vendor/lib/libdpframework.so
-vendor/lib/mt6768/libmtk_drvb.so:vendor/lib/libmtk_drvb.so
-vendor/lib/mt6768/libpq_prot.so:vendor/lib/libpq_prot.so
+vendor/lib/mt6768/libdpframework.so;SYMLINK=vendor/lib/libdpframework.so
+vendor/lib/mt6768/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
+vendor/lib/mt6768/libpq_prot.so;SYMLINK=vendor/lib/libpq_prot.so
 vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/libDefaultFpsActor.so
 vendor/lib/libFrameRecord.so
@@ -635,9 +635,9 @@ vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6768.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so
-vendor/lib64/mt6768/libdpframework.so:vendor/lib64/libdpframework.so
-vendor/lib64/mt6768/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
-vendor/lib64/mt6768/libpq_prot.so:vendor/lib64/libpq_prot.so
+vendor/lib64/mt6768/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
+vendor/lib64/mt6768/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
+vendor/lib64/mt6768/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
 vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
