@@ -682,6 +682,12 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
 
+# Display Configs
+vendor/etc/dsi_panel_c3u_35_03_0b_dsc_vdo_mi.xml
+vendor/etc/dsi_panel_c3u_43_02_0a_dsc_vdo_mi.xml
+vendor/etc/dsi_panel_c3u_43_02_0d_dsc_vdo_mi.xml
+vendor/etc/dsi_panel_c3u_46_0f_0c_dsc_vdo_mi.xml
+
 # Display firmware
 vendor/firmware/focaltech_ts_fw_boe.bin
 vendor/firmware/novatek_ts_hdl_fw.bin
