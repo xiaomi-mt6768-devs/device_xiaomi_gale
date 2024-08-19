@@ -18,9 +18,6 @@ static const variant_info_t gust_info = {
     .marketname = "Redmi 13C",
     .model = "23108RN04Y",
     .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
-
-    .nfc = true,
-
 };
 
 static const variant_info_t gale_info = {
@@ -32,9 +29,6 @@ static const variant_info_t gale_info = {
     .marketname = "Redmi 13C",
     .model = "23106RN0DA",
     .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
-
-    .nfc = false,
-
 };
 
 static const variant_info_t gale_la_info = {
@@ -46,9 +40,6 @@ static const variant_info_t gale_la_info = {
     .marketname = "Redmi 13C",
     .model = "23100RN82L",
     .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
-
-    .nfc = false,
-
 };
 
 static const variant_info_t gale_in_info = {
@@ -60,9 +51,6 @@ static const variant_info_t gale_in_info = {
     .marketname = "Redmi 13C",
     .model = "2311DRN14I",
     .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
-
-    .nfc = false,
-
 };
 
 static const variant_info_t gust_p_info = {
@@ -74,9 +62,6 @@ static const variant_info_t gust_p_info = {
     .marketname = "POCO C65",
     .model = "2310FPCA4G",
     .build_fingerprint = "POCO/gale_p_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
-
-    .nfc = true,
-
 };
 
 static const variant_info_t gale_p_info = {
@@ -88,9 +73,6 @@ static const variant_info_t gale_p_info = {
     .marketname = "POCO C65",
     .model = "2310FPCA4I",
     .build_fingerprint = "POCO/gale_p_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
-
-    .nfc = false,
-
 };
 
 static const std::vector<variant_info_t> variants = {
@@ -105,6 +87,5 @@ static const std::vector<variant_info_t> variants = {
 void vendor_load_properties() {
     if (access("/system/bin/recovery", F_OK) != 0) {
         search_variant(variants);
-        set_dalvik_heap();
     }
 }

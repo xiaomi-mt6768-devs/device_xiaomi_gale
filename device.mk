@@ -10,6 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# ADB
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0 \
+    ro.debuggable=1
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
@@ -273,7 +278,7 @@ PRODUCT_PACKAGES += \
     init.mt6768.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    ueventd.rc
+    ueventd.mt6768.rc
 
 # Overlays
 PRODUCT_PACKAGES += \
