@@ -106,4 +106,5 @@ void vendor_load_properties() {
     if (access("/system/bin/recovery", F_OK) != 0) {
         search_variant(variants);
         set_dalvik_heap();
+    }
 }
