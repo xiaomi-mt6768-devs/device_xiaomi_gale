@@ -311,7 +311,6 @@ vendor/lib64/libmtkcam_tuning_utils.so
 vendor/lib64/libmtkcam_ulog.so
 vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libneuron_runtime.6.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
 vendor/lib64/ov50d40_truly_main_i_mipi_raw_IdxMgr.so
