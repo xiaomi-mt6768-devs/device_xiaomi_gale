@@ -55,9 +55,4 @@ service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/
 
 # start mmstat
 on property:sys.boot_completed=1
-    mkdir /sys/kernel/tracing/instances/mmstat 711
-    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
-    write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 16
-    write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
-    write /sys/kernel/tracing/instances/mmstat/tracing_on 1
     write /proc/sys/vm/watermark_scale_factor 60
