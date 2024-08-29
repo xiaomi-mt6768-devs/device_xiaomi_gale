@@ -66,7 +66,6 @@ function blob_fixup {
             "$PATCHELF" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "$2"
             ;;
         vendor/bin/mnld|\
-        vendor/lib*/hw/android.hardware.sensors@2.X-subhal-mediatek.so|\
         vendor/lib*/libaalservice.so|\
         vendor/lib64/libcam.utils.sensorprovider.so)
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
