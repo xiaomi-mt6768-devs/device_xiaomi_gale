@@ -77,6 +77,9 @@ function blob_fixup {
         vendor/lib*/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
+            "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
+            ;;
     esac
 }
 
