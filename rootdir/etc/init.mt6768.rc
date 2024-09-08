@@ -6,6 +6,10 @@ import /vendor/etc/init/hw/init.cgroup.rc
 import /vendor/etc/init/hw/init.modem.rc
 
 on early-init
+    # load vendor-modules
+    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ bt_drv_connac1x connfem fmradio_drv_mt6631 fpsgo gps_drv trace_mmstat udc_lib wlan_drv_gen4m wmt_chrdev_wifi wmt_drv
+
+on early-init
     # boot perf. tune
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "0 0 0 0"
     write /sys/devices/platform/10012000.dvfsrc/helio-dvfsrc/dvfsrc_req_ddr_opp 0
