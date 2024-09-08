@@ -982,14 +982,3 @@ on property:ro.boot.opt_sim_count=*
 on property:ro.vendor.mtk_data_config=*
     setprop persist.vendor.radio.smart.data.switch ${ro.vendor.mtk_data_config}
 # Multisim setprop end
-
-# Logger
-service boot_log /system/bin/logcat -b all -D -f /metadata/boot_log.txt
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
-
-on boot
-    start boot_log
