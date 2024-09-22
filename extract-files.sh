@@ -80,6 +80,9 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
             "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
             ;;
+        system_ext/lib64/libsource.so)
+            grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
     esac
 }
 

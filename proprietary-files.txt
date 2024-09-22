@@ -153,6 +153,7 @@ vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 vendor/etc/smartpa_param/AW_DSP.bin
 vendor/etc/smartpa_param/AW_SINWAVE_DSP.bin
+vendor/etc/public.libraries.txt
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
