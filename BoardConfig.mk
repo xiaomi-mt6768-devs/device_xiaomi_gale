@@ -95,6 +95,10 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 TARGET_KERNEL_CONFIG := gale_user_defconfig
 TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/kernel-headers
 
+# NFC
+DEVICE_MANIFEST_SKUS += nfc
+DEVICE_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest_nfc.xml
+
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := gale,gust,gale_p,gust_p
 
