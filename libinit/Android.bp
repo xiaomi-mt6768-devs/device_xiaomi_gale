@@ -7,7 +7,6 @@
 cc_library_static {
     name: "libinit_xiaomi_gale",
     srcs: [
-        "libinit_dalvik_heap.cpp",
         "libinit_variant.cpp",
         "libinit_utils.cpp",
     ],
