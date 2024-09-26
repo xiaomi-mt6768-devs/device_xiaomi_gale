@@ -316,6 +316,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SettingsResOverlayGale \
     FrameworksResOverlayGale \
+    TetheringResOverlayGale \
     SystemUIOverlayGale \
     WifiResOverlayGale
 
