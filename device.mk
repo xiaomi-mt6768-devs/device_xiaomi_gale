@@ -362,8 +362,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.mediatek \
-    android.hardware.usb.gadget-service.mediatek
+    android.hardware.usb@1.3-service.mt6768
 
 # Vibrator
 PRODUCT_PACKAGES += \
