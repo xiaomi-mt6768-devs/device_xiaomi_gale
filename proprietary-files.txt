@@ -1,4 +1,4 @@
-# Unpinned blobs from gale-user 12 SP1A.210812.016 V816.0.2.0.UGPMIXM release-keys
+# Unpinned blobs from gale-user 12 SP1A.210812.016 V816.0.3.0.UGPMIXM release-keys
 
 # AEE
 vendor/lib/libaedv.so
@@ -746,7 +746,7 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 # Display Configs
 vendor/etc/dsi_panel_c3u_35_03_0b_dsc_vdo_mi.xml
 vendor/etc/dsi_panel_c3u_43_02_0a_dsc_vdo_mi.xml
-vendor/etc/dsi_panel_c3u_43_02_0d_dsc_vdo_mi.xml
+vendor/etc/dsi_panel_c3u_42_0f_0d_dsc_vdo_mi.xml
 vendor/etc/dsi_panel_c3u_46_0f_0c_dsc_vdo_mi.xml
 
 # Display firmware
