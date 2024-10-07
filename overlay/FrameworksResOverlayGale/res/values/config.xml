@@ -396,6 +396,9 @@
     <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
+    <!-- True if the device supports Sustained Performance Mode -->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
