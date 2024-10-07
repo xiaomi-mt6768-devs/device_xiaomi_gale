@@ -8,6 +8,10 @@ on init
     mkdir /storage/usbotg 0700 root root
 
 on post-fs-data
+# Fingerprint
+    mkdir /data/vendor/silead 0770 system system
+    mkdir /data/vendor/fpc 0777 system system
+    mkdir /data/vendor/goodix 0777 system system
 
 #Camera
     chmod 0660 /dev/MAINAF
@@ -56,3 +60,19 @@ service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/
 # start mmstat
 on property:sys.boot_completed=1
     write /proc/sys/vm/watermark_scale_factor 60
+
+# Fingerprint
+on boot
+    chown system system /dev/silead_fp
+    chmod 0660 /dev/silead_fp
+    chown system system /dev/silead_stub
+    chmod 0660 /dev/silead_stub
+    chmod 0644 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+    chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/irq
+    chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/wakeup_enable
+    chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/fingerdown_wait
+    chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/modalias
+    chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/clk_enable
+    chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/authen_fd/performance
+    chmod 0200 /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/fingerdown_wait
