@@ -187,6 +187,7 @@ ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=6
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.supports_background_blur=0
+ro.surface_flinger.enable_frame_rate_override=false
 debug.sf.auto_latch_unsignaled=false
 debug.sf.disable_backpressure=1
 debug.sf.early.app.duration=20000000
