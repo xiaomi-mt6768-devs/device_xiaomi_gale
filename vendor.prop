@@ -187,6 +187,7 @@ ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_data_config=1
 
 # LMKD
+ro.lmk.kill_heaviest_task=true
 ro.lmk.psi_complete_stall_ms=150
 ro.lmk.swap_free_low_percentage=20
 ro.lmk.thrashing_limit=30
