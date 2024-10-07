@@ -5,6 +5,7 @@ persist.dbg.wfc_avail_ovr=1
 
 # Surface Flinger
 persist.sys.sf.disable_blurs=1
+ro.sf.blurs_are_expensive=1
 
 # Zygote
 zygote.critical_window.minute=10
