@@ -220,6 +220,8 @@ vendor/lib64/libabfadp.so
 vendor/lib64/libanc_night.so
 vendor/lib64/libanc_night_preview.so
 vendor/lib64/libanc_single_rt_bokeh.so
+vendor/lib64/libanc_single_bokeh_rear.so
+vendor/lib64/libanc_single_bokeh.so
 vendor/lib64/libbwc.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcam.chdr.so
@@ -263,6 +265,8 @@ vendor/lib64/libcamera_scene.so
 vendor/lib64/libcameracustom.eis.so
 vendor/lib64/libcameracustom.plugin.so
 vendor/lib64/libcameracustom.so
+vendor/lib64/libcom.xiaomi.metadatautils.so
+vendor/lib64/libcom.xiaomi.pluginutils.so
 vendor/lib64/libeffecthal.base.so
 vendor/lib64/libfeature.face.so
 vendor/lib64/libfeature.stereo.provider.so
@@ -289,7 +293,12 @@ vendor/lib64/libmi_bokehpre.so
 vendor/lib64/libmialgo_ai_vision.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
+vendor/lib64/libmialgoengine2.so
+vendor/lib64/libmialgoengine.so
 vendor/lib64/libmorpho_HdrChecker.so
+vendor/lib64/libmorpho_ImageRefinerLite.so
+vendor/lib64/libmorpho_ImageRefiner.so
+vendor/lib64/libmpbase.so
 vendor/lib64/libmsnr.so
 vendor/lib64/libmtkcam.atmseventmgr.so
 vendor/lib64/libmtkcam.eventcallback.so
@@ -353,6 +362,7 @@ vendor/lib64/libmtkcam_tuning_utils.so
 vendor/lib64/libmtkcam_ulog.so
 vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libneuron_runtime.6.so
+vendor/lib64/libnbaio_mono.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
 vendor/lib64/ov50d40_truly_main_i_mipi_raw_IdxMgr.so
@@ -383,6 +393,7 @@ vendor/lib64/sc202cs_sunny_marco_i_mipi_raw_IdxMgr.so
 vendor/lib64/sc202cs_sunny_marco_i_mipi_raw_tuning.so
 vendor/lib64/sc202cs_sunny_marco_i_mipi_raw_xts_IdxMgr.so
 vendor/lib64/sc202cs_sunny_marco_i_mipi_raw_xts_tuning.so
+vendor/lib64/libQstAlgo.so
 vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so
@@ -603,7 +614,7 @@ vendor/etc/camera/xiaomi/superhdsnapshot.json
 vendor/etc/camera/xiaomi/superlowlightsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/xiaomi/uwsuperlowlightshot.json
-
+vendor/odm/etc/camera/camerabooster.json:vendor/etc/camera/camerabooster.json
 
 # Connectivity
 vendor/bin/wmt_launcher
@@ -753,6 +764,40 @@ vendor/etc/dsi_panel_c3u_46_0f_0c_dsc_vdo_mi.xml
 vendor/firmware/focaltech_ts_fw_boe.bin
 vendor/firmware/novatek_ts_hdl_fw.bin
 vendor/firmware/novatek_ts_hdl_mp.bin
+vendor/firmware/gt1151_default_firmware2.img
+vendor/firmware/gt9886_cfg_6781v01.bin
+vendor/firmware/gt9886_cfg_6785v96.bin
+vendor/firmware/gt9886_cfg_6785v99.bin
+vendor/firmware/gt9886_cfg_6853v01.bin
+vendor/firmware/gt9886_cfg_6873v01.bin
+vendor/firmware/gt9886_cfg_6877v01.bin
+vendor/firmware/gt9886_cfg_6885v01.bin
+vendor/firmware/gt9886_cfg_6885v1.bin
+vendor/firmware/gt9886_cfg_6885v9c.bin
+vendor/firmware/gt9886_cfg_6893v01.bin
+vendor/firmware/gt9886_cfg_90hz6785.bin
+vendor/firmware/gt9886_cfg_90hz6877.bin
+vendor/firmware/gt9886_cfg_90hz6885.bin
+vendor/firmware/gt9886_cfg_gt9885v1.bin
+vendor/firmware/gt9886_firmware_6781v01.bin
+vendor/firmware/gt9886_firmware_6785a4.bin
+vendor/firmware/gt9886_firmware_6785ae.bin
+vendor/firmware/gt9886_firmware_6853v01.bin
+vendor/firmware/gt9886_firmware_6873v01.bin
+vendor/firmware/gt9886_firmware_6877af.bin
+vendor/firmware/gt9886_firmware_6877v01.bin
+vendor/firmware/gt9886_firmware_6885a1.bin
+vendor/firmware/gt9886_firmware_6885af.bin
+vendor/firmware/gt9886_firmware_6885b0.bin
+vendor/firmware/gt9886_firmware_6885b1.bin
+vendor/firmware/gt9886_firmware_6885v01.bin
+vendor/firmware/gt9886_firmware_6893v01.bin
+vendor/firmware/mt6631_fm_v1_coeff.bin
+vendor/firmware/mt6631_fm_v1_patch.bin
+vendor/firmware/ovt_tcm_cap_limits.csv
+vendor/firmware/remoteproc_scp
+vendor/firmware/chipone_firmware.bin
+vendor/firmware/Conf_MultipleTest.ini
 
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
@@ -762,6 +807,8 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
+vendor/lib64/libwvkeyboxext.so
+vendor/lib64/libwvkeybox.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Fingerprint
@@ -802,6 +849,8 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CMCC.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CU.xml
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 vendor/etc/init/mtk_agpsd_p.rc
 vendor/etc/slp_conf
@@ -843,6 +892,7 @@ vendor/etc/.tp/.thermal_policy_05
 vendor/etc/.tp/.thermal_policy_08
 vendor/etc/.tp/thermal.conf
 vendor/etc/.tp/thermal.off.conf
+vendor/etc/thermalbreakboostconfig.xml
 vendor/etc/fstb.cfg
 vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/etc/init/init.thermal.rc
@@ -942,6 +992,20 @@ vendor/bin/vpud
 vendor/etc/init/vpud.rc
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
+vendor/lib/libasn1c_core.so
+vendor/lib/libasn1c_mapi.so
+vendor/lib/libasn1c_mdmi.so
+vendor/lib/libh264dec_customize.so
+vendor/lib/libh264dec_sa.ca7.so
+vendor/lib/libh264dec_sd.ca7.so
+vendor/lib/libh264dec_se.ca7.so
+vendor/lib/libh264enc_sa.ca7.so
+vendor/lib/libHEVCdec_sa.ca7.android.so
+vendor/lib/libhevce_sb.ca7.android.so
+vendor/lib/libvp8dec_sa.ca7.so
+vendor/lib/libvp8enc_sa.ca7.so
+vendor/lib/libvp9dec_sa.ca7.so
+vendor/lib/libvpx.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv.so
