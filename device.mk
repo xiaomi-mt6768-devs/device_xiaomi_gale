@@ -318,6 +318,7 @@ PRODUCT_PACKAGES += \
     SettingsResOverlayGale \
     FrameworksResOverlayGale \
     TetheringResOverlayGale \
+    TelephonyOverlayGale \
     SystemUIOverlayGale \
     WifiResOverlayGale
 
