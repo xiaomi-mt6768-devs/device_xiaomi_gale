@@ -1187,6 +1187,8 @@ system_ext/lib64/libvsim-adaptor-client.so
 system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# IMS (App) - From ruby-user 14 UP1A.231005.007 V816.0.4.0.UMOMIXM release-keys
 -system_ext/priv-app/ImsService/ImsService.apk
 
 # Wi-Fi
