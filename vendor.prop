@@ -57,8 +57,6 @@ persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.coredump.mode=0
 persist.vendor.connsys.dynamic.dump=0
 persist.vendor.connsys.patch.version=-1
-ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
-ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 
 # Chipset
