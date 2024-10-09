@@ -96,8 +96,12 @@ TARGET_KERNEL_CONFIG := gale_user_defconfig
 TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/kernel-headers
 
 # NFC
-DEVICE_MANIFEST_SKUS += nfc
-DEVICE_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest_nfc.xml
+ODM_MANIFEST_SKUS += \
+    c3un \
+    c3upg
+
+ODM_MANIFEST_C3UN_FILES := $(DEVICE_PATH)/manifest_c3un.xml
+ODM_MANIFEST_C3UPG_FILES := $(DEVICE_PATH)/manifest_c3upg.xml
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := gale,gust,gale_p,gust_p
