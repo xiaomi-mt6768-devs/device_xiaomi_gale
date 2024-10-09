@@ -3,6 +3,10 @@
 on early-init
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules trace_mmstat.ko
 
+# C3T code for HQ-218877 by zoujiarong at 2022.08.12 start
+import /vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+# C3T code for HQ-218877 by zoujiarong at 2022.8.12 end
+
 on init
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
     mkdir /storage/usbotg 0700 root root
