@@ -48,3 +48,6 @@ system_ext     /system_ext           ext4    ro      wait,slotselect,avb=vbmeta_
 /dev/block/by-name/md1img     /md1img         emmc    defaults defaults
 /dev/block/by-name/md1dsp     /md1dsp         emmc    defaults defaults
 /dev/block/by-name/gz1        /gz1            emmc    defaults defaults
+
+# ZRAM
+/dev/block/zram0              none            swap    defaults zramsize=55%
