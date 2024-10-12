@@ -186,6 +186,10 @@ on post-fs-data
     chmod 0777 /dev/nq-nci
     chown nfc nfc /dev/nq-nci
 
+    mkdir /data/vendor/secure_element 0777  secure_element secure_element
+    chmod 0660 /dev/p73
+    chown secure_element secure_element /dev/p73
+
     # boot time fs tune
     write /sys/block/mmcblk0/queue/iostats 0
     write /sys/block/mmcblk0/queue/read_ahead_kb 2048
