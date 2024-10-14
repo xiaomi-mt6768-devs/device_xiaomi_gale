@@ -222,6 +222,7 @@ debug.sf.early.sf.duration=24600000
 debug.sf.early.app.duration=30150000
 debug.sf.earlyGl.sf.duration=21850000
 debug.sf.earlyGl.app.duration=23850000
+ro.config.avoid_gfx_accel=true
 
 # Trusted Execution Environment (TEE)
 ro.vendor.mtk_microtrust_tee_support=1
