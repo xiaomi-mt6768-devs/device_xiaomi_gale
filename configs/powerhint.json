@@ -26,7 +26,7 @@
     },
     {
       "Name": "GPUSchedMode",
-      "Path": "/sys/devices/platform/13000000.mali/js_ctx_scheduling_mode",
+      "Path": "/sys/devices/platform/13040000.mali/js_ctx_scheduling_mode",
       "Values": [
         "0",
         "1"
@@ -36,7 +36,7 @@
     },
     {
       "Name": "GPUSchedPeriod",
-      "Path": "/sys/devices/platform/13000000.mali/js_scheduling_period",
+      "Path": "/sys/devices/platform/13040000.mali/js_scheduling_period",
       "Values": [
         "100",
         "75",
@@ -49,7 +49,7 @@
     },
     {
       "Name": "GPUDVFSInterval",
-      "Path": "/sys/devices/platform/13000000.mali/dvfs_period",
+      "Path": "/sys/devices/platform/13040000.mali/dvfs_period",
       "Values": [
         "100",
         "75",
