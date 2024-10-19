@@ -165,6 +165,12 @@
       "Value": "1"
     },
     {
+      "PowerHint": "LAUNCH",
+      "Node": "SchedBoost",
+      "Duration": 2500,
+      "Value": "6"
+    },
+    {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "PowerHALRenderingState",
       "Duration": 0,
