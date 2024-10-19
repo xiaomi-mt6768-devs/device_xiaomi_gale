@@ -313,11 +313,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
     fstab.mt6768.ramdisk \
-    init.cgroup.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6768.rc \
     init.mt6768.usb.rc \
+    init.mt6768.power.rc \
     init.project.rc \
     init.target.rc \
     init.sensor_1_0.rc \
