@@ -1056,8 +1056,20 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
 # NFC
+vendor/bin/hw/android.hardware.nfc@1.2-service-tms
+vendor/etc/init/android.hardware.nfc@1.2-service-tms.rc
+vendor/etc/init/init.thn31.nfc.rc
+vendor/etc/init/init.thn31.se.rc
 vendor/lib/hal_libnfc.so
+vendor/lib/nfc_nci.thn31nfc.tms.so
+vendor/lib/vendor.tms.tmsnfc@1.0.so
+vendor/lib64/7816-3-T1.so
 vendor/lib64/hal_libnfc.so
+vendor/lib64/nfc_nci.thn31nfc.tms.so
+vendor/lib64/tms-cos-dl-common.so
+vendor/lib64/tms-cos-dl-ree.so
+vendor/lib64/tms-utils.so
+vendor/lib64/vendor.tms.tmsnfc@1.0.so
 
 # Perf
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
