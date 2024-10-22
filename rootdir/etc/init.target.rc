@@ -1,2 +1,6 @@
 on boot
+    # Touch panel
+    chmod 0664 /dev/input/event2
+    chown system system /dev/input/event2
+
     stop console
