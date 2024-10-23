@@ -429,6 +429,14 @@
            <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>vendor.tms.tmsnfc</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITmsNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
     <name>vendor.nxp.nxpnfclegacy</name>
     <version>1.0</version>
