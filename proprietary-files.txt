@@ -1150,8 +1150,12 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Radio (IMS)
 vendor/bin/hw/vtservice_hidl
+vendor/bin/ipsec_mon
 vendor/bin/rcs_volte_stack
 vendor/bin/volte_clientapi_ua
+vendor/bin/volte_imcb
+vendor/bin/volte_imsm_93
+vendor/bin/volte_md_status
 vendor/bin/volte_rcs_ua
 vendor/bin/ipsec_mon
 vendor/bin/volte_imcb
@@ -1172,7 +1176,11 @@ vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libvt_custom.so
 vendor/lib/libipsec_ims_shr.so
+vendor/lib/librcs_interface.so
 vendor/lib/librcs_volte_core.so
+vendor/lib/libvolte_core_shr.so
+vendor/lib/libvolte_xdmc_shr.so
+vendor/lib/libvt_custom.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
