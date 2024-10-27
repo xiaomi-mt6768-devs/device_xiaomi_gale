@@ -1153,15 +1153,12 @@ vendor/bin/hw/vtservice_hidl
 vendor/bin/ipsec_mon
 vendor/bin/rcs_volte_stack
 vendor/bin/volte_clientapi_ua
-vendor/bin/volte_imcb
 vendor/bin/volte_imsm_93
 vendor/bin/volte_md_status
 vendor/bin/volte_rcs_ua
 vendor/bin/ipsec_mon
-vendor/bin/volte_imcb
 vendor/bin/volte_imsm_93
 vendor/bin/volte_md_status
-vendor/bin/volte_ua
 vendor/etc/init/init.vtservice_hidl.rc
 vendor/etc/init/volte_clientapi_ua.rc
 vendor/etc/init/volte_rcs_ua.rc
@@ -1172,13 +1169,11 @@ vendor/etc/init/init.volte_stack.rc
 vendor/etc/init/init.volte_ua.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/lib/librcs_interface.so
-vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libvt_custom.so
 vendor/lib/libipsec_ims_shr.so
 vendor/lib/librcs_interface.so
 vendor/lib/librcs_volte_core.so
-vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libvt_custom.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
@@ -1188,7 +1183,12 @@ vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# Radio (MTK-IMS) - From V816.0.5.0.UGPEUXM release-keys 
+# Radio (IMS) - From V816.0.1.0.UGPMIXM
+vendor/bin/volte_imcb|8a11bd20d09fcfab827368e49dd7b9eafd29d6b8
+vendor/bin/volte_ua|baebbcb670773964f09d5b9b7821dcf58a818eef
+vendor/lib/libvolte_core_shr.so|74359a32e26ba3943e4deb001d290f9d635bb193
+
+# Radio (MTK-IMS) - From V816.0.5.0.UGPEUXM release-keys
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
 system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar
