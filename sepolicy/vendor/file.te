@@ -10,4 +10,4 @@ type pps_socket, file_type;
 
 # Fingerprint
 type vendor_fingerprint_data_file, data_file_type, file_type;
-
+type silead_fpd_data_file, data_file_type, file_type;

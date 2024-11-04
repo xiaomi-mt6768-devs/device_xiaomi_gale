@@ -1,5 +1,6 @@
 # Fingerprint
 persist.vendor.sys.fp.                   u:object_r:vendor_fingerprint_persist_prop:s0
+vendor.silead.fp.ext.                    u:object_r:vendor_silead_fp_prop:s0
 
 # Thermal
 vendor.sys.thermal.                      u:object_r:thermal_engine_prop:s0
