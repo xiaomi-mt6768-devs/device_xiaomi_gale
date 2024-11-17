@@ -1,4 +1,4 @@
-# Unpinned blobs from gale-user 12 SP1A.210812.016 V816.0.3.0.UGPMIXM release-keys
+# Unpinned blobs from gale-user 12 SP1A.210812.016 V816.0.5.0.UGPMIXM release-keys
 
 # AEE
 vendor/lib/libaedv.so

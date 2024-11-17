@@ -17,7 +17,7 @@ static const variant_info_t c3un_info = {
     .mod_device = "gust_global",
     .marketname = "Redmi 13C",
     .model = "23108RN04Y",
-    .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
+    .build_fingerprint = "Redmi/gust_global/gust:13/SP1A.210812.016/V816.0.5.0.UGPMIXM:user/release-keys"
 };
 
 static const variant_info_t c3ua_info = {
@@ -29,7 +29,7 @@ static const variant_info_t c3ua_info = {
     .mod_device = "gale_global",
     .marketname = "Redmi 13C",
     .model = "23106RN0DA",
-    .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
+    .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.5.0.UGPMIXM:user/release-keys"
 };
 
 static const variant_info_t c3ul_info = {
@@ -41,7 +41,7 @@ static const variant_info_t c3ul_info = {
     .mod_device = "gale_global",
     .marketname = "Redmi 13C",
     .model = "23100RN82L",
-    .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
+    .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.5.0.UGPMIXM:user/release-keys"
 };
 
 static const variant_info_t c3uin_info = {
@@ -53,7 +53,7 @@ static const variant_info_t c3uin_info = {
     .mod_device = "gale_global",
     .marketname = "Redmi 13C",
     .model = "2311DRN14I",
-    .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
+    .build_fingerprint = "Redmi/gale_global/gale:13/SP1A.210812.016/V816.0.5.0.UGPMIXM:user/release-keys"
 };
 
 static const variant_info_t c3upg_info = {
@@ -65,7 +65,7 @@ static const variant_info_t c3upg_info = {
     .mod_device = "gust_p_global",
     .marketname = "POCO C65",
     .model = "2310FPCA4G",
-    .build_fingerprint = "POCO/gale_p_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
+    .build_fingerprint = "POCO/gust_p_global/gust:13/SP1A.210812.016/V816.0.5.0.UGPMIXM:user/release-keys"
 };
 
 static const variant_info_t c3upin_info = {
@@ -77,7 +77,7 @@ static const variant_info_t c3upin_info = {
     .mod_device = "gale_p_global",
     .marketname = "POCO C65",
     .model = "2310FPCA4I",
-    .build_fingerprint = "POCO/gale_p_global/gale:13/SP1A.210812.016/V816.0.2.0.UGPMIXM:user/release-keys"
+    .build_fingerprint = "POCO/gale_p_global/gale:13/SP1A.210812.016/V816.0.5.0.UGPMIXM:user/release-keys"
 };
 
 static const std::vector<variant_info_t> variants = {
