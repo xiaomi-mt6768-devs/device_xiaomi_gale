@@ -8,8 +8,6 @@ genfscon sysfs /devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/wakeup_ena
 genfscon sysfs /devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/irq u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/authen_fd/performance u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/modalias u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /bus/platform/devices/fingerprint/fingerdown_wait u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /bus/platform/devices/fingerprint/hw_reset u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/fingerprint u:object_r:sysfs_fingerprint:s0
 
 # Health
