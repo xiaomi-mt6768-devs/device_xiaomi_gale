@@ -1,7 +1,3 @@
-# Performance
-genfscon sysfs /devices/system/cpu/cpufreq/mtk/.cluster_(min|max)_freq                                                          u:object_r:sysfs_mtk_cpufreq:s0
-genfscon sysfs /kernel/gpu/gpu_(min|max)_clock                                                                                  u:object_r:sysfs_mtk_gpufreq:s0
-
 # Extcon
 genfscon sysfs /devices/platform/extcon_usb/extcon/extcon0/cable.1/name u:object_r:sysfs_extcon:s0
 
@@ -15,32 +11,19 @@ genfscon sysfs /bus/platform/devices/fingerprint/fingerdown_wait u:object_r:sysf
 genfscon sysfs /bus/platform/devices/fingerprint/hw_reset u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/fingerprint u:object_r:sysfs_fingerprint:s0
 
-# Graphics
-genfscon sysfs /devices/platform/14000000.dispsys_config/drm/card0/card0-DSI-1/panel_event u:object_r:vendor_sysfs_graphics:s0
-genfscon sysfs /devices/platform/13040000.mali u:object_r:vendor_sysfs_graphics:s0
-
 # Health
-genfscon sysfs /devices/platform/mt_charger/power_supply/* u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/battery/power_supply/* u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify(/.*)? u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0066/power_supply/bq2597x-standalone u:object_r:sysfs_batteryinfo:s0
->>>>>>> 20e5e29 (fleur: Label Fingerprint FPC nodes)
+genfscon sysfs /devices/platform/mt_charger/power_supply/ac u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb u:object_r:sysfs_batteryinfo:s0
 
-# Vibrator
-genfscon sysfs /devices/platform/aw8622 u:object_r:sysfs_vibrator:s0
 
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
-genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/10600000.adsp_core0/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/11004000.i2c7/i2c-7/7-0008/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0066/power_supply/bq2597x-standalone/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0066/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/11019000.i2c9/i2c-9/9-004e/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/wakeup u:object_r:sysfs_wakeup:s0                               
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/wakeup u:object_r:sysfs_wakeup:s0                            
+genfscon sysfs /devices/platform/10238000.gce/wakeup u:object_r:sysfs_wakeup:s0                     
+genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-004e/tcpc/type_c_port0/wakeup u:object_r:sysfs_wakeup:s0                                       
+genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-004e/wakeup u:object_r:sysfs_wakeup:s0       
+genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-006a/power_supply/sc-charger/wakeup u:object_r:sysfs_wakeup:s0                                 
+genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-006a/wakeup u:object_r:sysfs_wakeup:s0       
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0028/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/15020000.imgsys_config/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/1a000000.camisp/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/battery/power_supply/bms/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/mt_charger/power_supply/main/wakeup u:object_r:sysfs_wakeup:s0
-
