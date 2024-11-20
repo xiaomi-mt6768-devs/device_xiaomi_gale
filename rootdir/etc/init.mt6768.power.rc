@@ -55,6 +55,12 @@ on enable-low-power
     write /sys/devices/system/cpu/eas/enable 2
     write /proc/cpufreq/cpufreq_sched_disable 0
 
+    # Background group
+    write /dev/stune/background/schedtune.boost 0
+    write /dev/stune/background/schedtune.uclamp.max 30
+    write /dev/stune/background/schedtune.uclamp.min 0
+    write /dev/stune/background/schedtune.prefer_idle 1
+
     chown system system /dev/stune/foreground/schedtune.prefer_idle
     chown system system /dev/stune/top-app/schedtune.prefer_idle
     chown system system /dev/stune/rt/schedtune.prefer_idle
