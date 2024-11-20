@@ -61,6 +61,12 @@ on enable-low-power
     write /dev/stune/background/schedtune.uclamp.min 0
     write /dev/stune/background/schedtune.prefer_idle 1
 
+    # NNAPI HAL group
+    write /dev/stune/nnapi-hal/schedtune.boost 20
+    write /dev/stune/nnapi-hal/schedtune.uclamp.max max
+    write /dev/stune/nnapi-hal/schedtune.uclamp.min 90
+    write /dev/stune/nnapi-hal/schedtune.prefer_idle 0
+
     chown system system /dev/stune/foreground/schedtune.prefer_idle
     chown system system /dev/stune/top-app/schedtune.prefer_idle
     chown system system /dev/stune/rt/schedtune.prefer_idle
