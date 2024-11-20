@@ -224,6 +224,8 @@ debug.sf.high_fps.early.app.duration=21000000
 debug.sf.high_fps.earlyGl.sf.duration=22000000
 debug.sf.high_fps.earlyGl.app.duration=21000000
 debug.sf.high_fps.hwc.min.duration=17000000
+debug.sf.region_sampling_timer_timeout_ns=200000000
+debug.sf.region_sampling_period_ns=200000000
 ro.config.avoid_gfx_accel=true
 
 # Trusted Execution Environment (TEE)
