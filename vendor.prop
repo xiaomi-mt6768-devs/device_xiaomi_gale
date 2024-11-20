@@ -186,6 +186,9 @@ persist.vendor.volte_support=1
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_data_config=1
 
+# Power
+vendor.powerhal.disp.idle_support=false
+
 # Sensors
 ro.vendor.mtk.sensor.support=yes
 
