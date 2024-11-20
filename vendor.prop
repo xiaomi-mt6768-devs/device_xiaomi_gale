@@ -210,12 +210,20 @@ debug.sf.enable_gl_backpressure=0
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
-debug.sf.late.sf.duration=18500000
-debug.sf.late.app.duration=31500000
-debug.sf.early.sf.duration=24600000
-debug.sf.early.app.duration=30150000
-debug.sf.earlyGl.sf.duration=21850000
-debug.sf.earlyGl.app.duration=23850000
+debug.sf.late.sf.duration=27600000
+debug.sf.late.app.duration=20000000
+debug.sf.early.sf.duration=27600000
+debug.sf.early.app.duration=20000000
+debug.sf.earlyGl.sf.duration=27600000
+debug.sf.earlyGl.app.duration=20000000
+debug.sf.hwc.min.duration=17000000
+debug.sf.high_fps.late.sf.duration=22000000
+debug.sf.high_fps.late.app.duration=21000000
+debug.sf.high_fps.early.sf.duration=22000000
+debug.sf.high_fps.early.app.duration=21000000
+debug.sf.high_fps.earlyGl.sf.duration=22000000
+debug.sf.high_fps.earlyGl.app.duration=21000000
+debug.sf.high_fps.hwc.min.duration=17000000
 ro.config.avoid_gfx_accel=true
 
 # Trusted Execution Environment (TEE)
