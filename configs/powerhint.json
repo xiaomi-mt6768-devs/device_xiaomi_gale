@@ -188,6 +188,12 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "TAUclampMin",
+      "Duration": 0,
+      "Value": "25"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "SchedBoost",
       "Duration": 0,
       "Value": "2"
