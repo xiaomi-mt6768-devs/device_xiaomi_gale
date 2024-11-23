@@ -44,12 +44,13 @@ on init
     chmod 0666 /dev/stune/io/tasks
 
 on property:sys.boot_completed=1
-    # update cpus for cpuset cgroup
-    write /dev/cpuset/foreground/cpus 0-2,4-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
+    # Setup final cpuset
+    write /dev/cpuset/foreground/cpus 0-3,6-7
     write /dev/cpuset/background/cpus 0-1
     write /dev/cpuset/system-background/cpus 0-2
     write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/camera-daemon/cpus 0-7
+    write /dev/cpuset/restricted/cpus 0-3
 
 on enable-low-power
     write /sys/devices/system/cpu/eas/enable 2
