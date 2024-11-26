@@ -5,9 +5,8 @@
 /dev/cpu_dma_latency                                                                                    u:object_r:latency_device:s0
 
 # Power
-<<<<<<< HEAD
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower@1\.2-service\.stub                  u:object_r:hal_power_exec:s0
-/vendor/bin/hw/android\.hardware\.power-service\.mediatek-libperfmgr                                    u:object_r:hal_power_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power-service\.lineage-libperfmgr                                    u:object_r:hal_power_default_exec:s0
 
 # Thermals
 /vendor/bin/mi_thermald                                                                                 u:object_r:mi_thermald_exec:s0
@@ -33,6 +32,9 @@
 /data/vendor/goodix(/.*)?                                                                              u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/fpc(/.*)?                                                                                 u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/gf_data(/.*)?                                                                             u:object_r:vendor_fingerprint_data_file:s0
+
+# Light
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi                                u:object_r:hal_light_default_exec:s0
 
 # Sensors
 /dev/elliptic[0-1]                                                                                     u:object_r:sensor_device:s0
