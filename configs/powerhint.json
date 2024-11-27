@@ -100,18 +100,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "FGUclampMin",
-      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_fg_uclamp_min",
-      "Values": [
-        "100",
-        "75",
-        "50",
-        "25",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "TAUclampMin",
       "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_ta_uclamp_min",
       "Values": [
@@ -201,12 +189,6 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "TAUclampMin",
-      "Duration": 2500,
-      "Value": "50"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "FGUclampMin",
       "Duration": 2500,
       "Value": "50"
     },
