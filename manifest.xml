@@ -15,11 +15,6 @@
         <fqname>@1.1::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.bluetooth.audio</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.camera.provider</name>
         <transport>hwbinder</transport>
         <fqname>@2.6::ICameraProvider/internal/0</fqname>
@@ -77,11 +72,6 @@
         <fqname>@1.3::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.renderscript</name>
-        <transport arch="32+64">passthrough</transport>
-        <fqname>@1.0::IDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IOffloadConfig/default</fqname>
@@ -103,22 +93,6 @@
         <transport>hwbinder</transport>
         <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
         <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.aee</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::IAee/AEE</fqname>
-        <fqname>@1.1::IAee/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.apmonitor</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::IApmService/apm_hidl_service</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.atci</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IAtcid/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.bluetooth.audio</name>
