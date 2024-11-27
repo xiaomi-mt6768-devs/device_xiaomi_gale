@@ -81,6 +81,12 @@ on boot
     chown system system /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/authen_fd/performance
     chmod 0200 /sys/devices/platform/11012000.spi2/spi_master/spi2/spi2.0/fingerdown_wait
 
+    # Touch panel
+    chmod 0664 /dev/input/event2
+    chown system system /dev/input/event2
+
+    stop console
+
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     class hal
     user nfc

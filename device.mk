@@ -319,7 +319,6 @@ PRODUCT_PACKAGES += \
     init.mt6768.usb.rc \
     init.mt6768.power.rc \
     init.project.rc \
-    init.target.rc \
     init.sensor_1_0.rc \
     init.zram.rc \
     ueventd.mt6768.rc
