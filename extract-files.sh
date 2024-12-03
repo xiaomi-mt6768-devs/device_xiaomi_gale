@@ -111,6 +111,18 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/lib64/libmnl.so)
+            "${PATCHELF}" --add-needed "libcutils.so" "${2}"
+            ;;
+        vendor/lib*/libteei_daemon_vfs.so|\
+        vendor/lib64/libSQLiteModule_VER_ALL.so|\
+        vendor/lib64/lib3a.flash.so|\
+        vendor/lib64/lib3a.ae.stat.so|\
+        vendor/lib64/lib3a.sensors.color.so|\
+        vendor/lib64/lib3a.sensors.flicker.so|\
+        vendor/lib64/libaaa_ltm.so)
+            "${PATCHELF}" --add-needed "liblog.so" "${2}"
+            ;;
         *)
             return 1
             ;;
