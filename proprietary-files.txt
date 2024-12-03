@@ -1175,7 +1175,7 @@ vendor/bin/volte_imcb|8a11bd20d09fcfab827368e49dd7b9eafd29d6b8
 vendor/bin/volte_ua|baebbcb670773964f09d5b9b7821dcf58a818eef
 vendor/lib/libvolte_core_shr.so|74359a32e26ba3943e4deb001d290f9d635bb193
 
-# Radio (MTK-IMS) - From V816.0.5.0.UGPEUXM release-keys
+# Radio (MTK-IMS)
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
 system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar
@@ -1187,7 +1187,7 @@ system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telec
 system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar
 system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar
 system_ext/lib64/libcomutils.so
-system_ext/lib64/libimsma.so
+system_ext/lib64/libimsma.so;DISABLE_DEPS
 system_ext/lib64/libimsma_adapt.so
 system_ext/lib64/libimsma_rtp.so
 system_ext/lib64/libimsma_socketwrapper.so
