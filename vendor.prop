@@ -106,7 +106,7 @@ persist.sys.fuse.passthrough.enable=true
 # Fingerprint
 persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_modules=fpc,goodix,silead,chipone
-persist.vendor.fingerprint.sensor_location=681|749|145
+persist.vendor.fingerprint.sensor_location=681|749|145|local:0
 
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
