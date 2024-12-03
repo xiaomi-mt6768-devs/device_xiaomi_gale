@@ -103,6 +103,11 @@ ro.vendor.smvr.p2batch.vga=8
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_modules=fpc,goodix,silead,chipone
+persist.vendor.fingerprint.sensor_location=681|749|145
+
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 

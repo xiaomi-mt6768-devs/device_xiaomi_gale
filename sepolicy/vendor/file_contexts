@@ -18,7 +18,7 @@
 /data/vendor/camera(/.*)?                                                                              u:object_r:vendor_camera_data_file:s0
 
 # Fingerprint
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2.3-service\.xiaomi          u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi              u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.silead\.hardware\.fingerprintext@1\.0-service                   u:object_r:hal_fingerprint_default_exec:s0
 /data/(vendor|system)/silead(/.*)?                                                                     u:object_r:silead_fpd_data_file:s0
 /persist/silead(/.*)?                                                                                  u:object_r:silead_fpd_data_file:s0
