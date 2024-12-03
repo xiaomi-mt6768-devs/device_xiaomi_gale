@@ -51,8 +51,8 @@ BOARD_HAS_MTK_HARDWARE := true
 BOARD_VENDOR := xiaomi
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
@@ -99,8 +99,8 @@ ODM_MANIFEST_SKUS += \
     c3un \
     c3upg
 
-ODM_MANIFEST_C3UN_FILES := $(DEVICE_PATH)/manifest_c3un.xml
-ODM_MANIFEST_C3UPG_FILES := $(DEVICE_PATH)/manifest_c3upg.xml
+ODM_MANIFEST_C3UN_FILES := $(DEVICE_PATH)/configs/nfc/manifest_c3un.xml
+ODM_MANIFEST_C3UPG_FILES := $(DEVICE_PATH)/configs/nfc/manifest_c3upg.xml
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := gale,gust,gale_p,gust_p
@@ -173,11 +173,11 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     vendor/lineage/config/device_framework_matrix.xml \
-    $(DEVICE_PATH)/framework_compatibility_matrix.xml
+    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
 
 # Inherit the proprietary files
 include vendor/xiaomi/gale/BoardConfigVendor.mk
