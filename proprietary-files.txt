@@ -37,7 +37,7 @@ vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtkshifter_vendor.so
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/librt_extamp_intf.so
-vendor/lib/libspeech_enh_lib.so
+vendor/lib/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 
@@ -625,7 +625,7 @@ vendor/firmware/WMT_SOC.cfg
 vendor/firmware/soc1_0_patch_mcu_1a_1_hdr.bin
 vendor/firmware/soc1_0_ram_mcu_1a_1_hdr.bin
 vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
