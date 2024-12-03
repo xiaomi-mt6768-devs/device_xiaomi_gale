@@ -294,7 +294,7 @@ vendor/lib64/libmialgo_ai_vision.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgoengine2.so
-vendor/lib64/libmialgoengine.so
+vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
 vendor/lib64/libmorpho_HdrChecker.so
 vendor/lib64/libmorpho_ImageRefinerLite.so
 vendor/lib64/libmorpho_ImageRefiner.so
@@ -815,13 +815,13 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
 vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
 vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.goodix.default.so;DISABLE_CHECKELF
 vendor/lib64/hw/fingerprint.silead.default.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libmifpext.so
 vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/libgoodixhwfingerprint.so;DISABLE_CHECKELF
 vendor/lib64/libsl_fp_impl.so
 
 # Fuelgauge
@@ -918,7 +918,7 @@ vendor/lib/libteei_daemon_vfs.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/libimsg_log.so
 vendor/lib64/libteei_daemon_vfs.so
-vendor/lib64/libthha.so
+vendor/lib64/libthha.so;DISABLE_CHECKELF
 vendor/lib64/libthhclient.so
 vendor/lib64/wechat.beanpod.so
 vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta
@@ -995,7 +995,7 @@ vendor/lib/libvp8dec_sa.ca7.so
 vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvpx.so
-vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv.so
 vendor/lib/libvcodecdrv_header_stub.so
