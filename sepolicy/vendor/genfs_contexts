@@ -30,3 +30,4 @@ genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-006a/power_supply/sc-char
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-006a/wakeup u:object_r:sysfs_wakeup:s0       
 genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0028/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/15020000.imgsys_config/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/wakeup/wakeup110 u:object_r:sysfs_wakeup:s0
