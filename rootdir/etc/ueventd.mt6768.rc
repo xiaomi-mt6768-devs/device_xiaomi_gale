@@ -147,6 +147,3 @@
 
 # Resume-on-Reboot
 /dev/access-kregistry     0660   system     system
-
-# Double tap
-/dev/input/event2 0660 system input
