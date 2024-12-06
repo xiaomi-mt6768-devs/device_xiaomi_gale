@@ -86,13 +86,3 @@ on boot
     chown system system /dev/input/event2
 
     stop console
-
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
-    class hal
-    user nfc
-    group nfc
-    disabled
-    override
-
-on post-fs && property:ro.boot.hwname=gust
-    start vendor.nfc_hal_service
