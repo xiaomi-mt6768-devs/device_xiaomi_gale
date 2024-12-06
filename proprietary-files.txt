@@ -1043,10 +1043,10 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
 # NFC
 vendor/bin/hw/android.hardware.nfc@1.2-service-tms
-vendor/etc/init/android.hardware.nfc@1.2-service-tms.rc
 vendor/etc/init/init.thn31.nfc.rc
 vendor/etc/init/init.thn31.se.rc
 vendor/lib64/7816-3-T1.so
+vendor/lib64/libpn557_fw.so
 vendor/lib64/nfc_nci.thn31nfc.tms.so
 vendor/lib64/tms-cos-dl-common.so
 vendor/lib64/tms-cos-dl-ree.so

@@ -4,6 +4,7 @@ import /vendor/etc/init/hw/init.mt6768.power.rc
 import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.sensor_1_0.rc
 import /vendor/etc/init/hw/init.modem.rc
+import /vendor/etc/init/hw/init.nfc.rc
 import /vendor/etc/init/hw/init.zram.rc
 
 on early-init

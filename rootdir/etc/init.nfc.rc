@@ -1,0 +1,35 @@
+on post-fs-data
+    mkdir /data/vendor 0777 nfc nfc
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+    chmod 0660 /dev/pn557
+    chown nfc nfc /dev/pn557
+    chmod 0660 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
+
+on boot
+    mkdir /data/vendor/nfc_socket 0770 nfc nfc
+    mkdir /data/vendor 0777 nfc nfc
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+    chmod 0660 /dev/tms_nfc
+    chown nfc nfc /dev/tms_nfc
+    chmod 0666 /sys/nfc/chip_name
+    chown nfc nfc /sys/nfc/chip_name
+
+on post-fs && property:ro.product.vendor.device=gust
+    start nfc_hal_service.tms
+    start vendor.nfc_hal_service
+
+service nfc_hal_service.tms /vendor/bin/hw/android.hardware.nfc@1.2-service-tms
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    class hal
+    user nfc
+    group nfc
+    disabled
+    override

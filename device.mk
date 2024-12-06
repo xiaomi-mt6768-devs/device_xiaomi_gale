@@ -318,6 +318,7 @@ PRODUCT_PACKAGES += \
     init.mt6768.rc \
     init.mt6768.usb.rc \
     init.mt6768.power.rc \
+    init.nfc.rc \
     init.project.rc \
     init.sensor_1_0.rc \
     init.zram.rc \
