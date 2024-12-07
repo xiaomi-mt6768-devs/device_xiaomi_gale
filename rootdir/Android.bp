@@ -4,6 +4,13 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    required: [ "init.insmod.mt6768.cfg" ],
+    vendor: true,
+}
+
 prebuilt_etc {
     name: "fstab.mt6768",
     src: "etc/fstab.mt6768",

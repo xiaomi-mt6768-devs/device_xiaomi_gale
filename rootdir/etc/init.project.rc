@@ -1,3 +1,5 @@
+import /vendor/etc/init/hw/init.mtkgki.rc
+
 # MTK project .rc configure
 
 on early-init
@@ -7,15 +9,50 @@ on early-init
 import /vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 # C3T code for HQ-218877 by zoujiarong at 2022.8.12 end
 
+on boot
+    mkdir /data/vendor/secure_element 0777  secure_element secure_element
+    wait /sys/nfc/chip_name
+    wait /dev/tms_ese 1
+    chmod 0660 /dev/tms_ese
+    chown secure_element secure_element /dev/tms_ese
+    mkdir /data/vendor/nfc_socket 0770 nfc nfc
+    mkdir /data/vendor 0777 nfc nfc
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+    wait /sys/nfc/chip_name
+    chmod 0660 /dev/tms_nfc
+    chown nfc nfc /dev/tms_nfc
+    chown nfc nfc /sys/nfc/chip_name
+
+
 on init
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
     mkdir /storage/usbotg 0700 root root
 
+on post-fs
+    insmod /vendor/lib/modules/tms_device_modules.ko
+
 on post-fs-data
+
 # Fingerprint
     mkdir /data/vendor/silead 0770 system system
     mkdir /data/vendor/fpc 0777 system system
     mkdir /data/vendor/goodix 0777 system system
+
+# NFC
+    mkdir /data/vendor 0777 nfc nfc
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+    chmod 0660 /dev/pn557
+    chown nfc nfc /dev/pn557
+    chmod 0660 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
+    chmod 0660 /dev/tms_nfc
+    chown nfc nfc /dev/tms_nfc
+    chmod 0660 /dev/p73
+    chown nfc nfc /dev/p73
+
+
 
 #Camera
     chmod 0660 /dev/MAINAF
@@ -87,7 +124,7 @@ on boot
 
     stop console
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nqnfc-service.nxp
     class hal
     user nfc
     group nfc
