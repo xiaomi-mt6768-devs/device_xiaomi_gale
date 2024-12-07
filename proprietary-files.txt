@@ -837,6 +837,11 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib/libfgauge_gm30.so
 
+# Gatekeeper
+vendor/bin/hw/android.hardware.gatekeeper-service.beanpod
+vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc
+vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.beanpod.xml
+
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
 vendor/bin/mnld
