@@ -285,7 +285,10 @@ on post-fs-data
     chmod 666 /dev/mali0
     #chown system graphics /dev/mali
 
-
+    # TOUCH KO
+    on init
+    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d \
+        /vendor/lib/modules tui-common.ko gt9895.ko ft3518u.ko st61y.ko gt9916.ko nt36672c.ko gt9886.ko synaptics_tcm.ko gt9896s.ko gt1151.ko td4320.ko nt36xxx_no_flash_spi.ko hxchipset_hx83102p.ko nt36672c_i2c.ko nt36672c_144hz.ko nt36672c_120hz.ko legacy_gt9896s.ko ft3518.ko nt36532.ko focaltech_touch.ko
 
     # Touch Panel
     # chmod 0664 /dev/touch
