@@ -616,6 +616,11 @@ vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/xiaomi/uwsuperlowlightshot.json
 vendor/odm/etc/camera/camerabooster.json:vendor/etc/camera/camerabooster.json
 
+# Composer
+vendor/bin/hw/android.hardware.graphics.composer@3.3-service
+vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc
+-vendor/etc/vintf/manifest/manifest_hwcomposer.xml
+
 # Connectivity
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
