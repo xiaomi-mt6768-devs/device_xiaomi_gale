@@ -1,0 +1,12 @@
+<displayConfiguration>
+    <screenBrightnessMap>
+        <point>
+            <value>0.0</value>
+            <nits>2.0</nits>
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>490.0</nits>
+        </point>
+    </screenBrightnessMap>
+</displayConfiguration>
