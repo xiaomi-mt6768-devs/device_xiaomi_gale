@@ -230,11 +230,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
     fstab.mt6768.ramdisk \
+    init.insmod.sh \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6768.rc \
     init.mt6768.usb.rc \
     init.mt6768.power.rc \
+    init.mtkgki.rc \
     init.project.rc \
     init.sensor_1_0.rc \
     init.zram.rc \
