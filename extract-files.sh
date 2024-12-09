@@ -75,34 +75,15 @@ function blob_fixup {
             apktool_patch "${2}" "${MY_DIR}/blob-patches/ImsService.patch" -r
             [ "$2" = "" ] && return 0
             ;;
-        vendor/bin/hw/android.hardware.gnss-service.mediatek |\
-        vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
-            "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
-            [ "$2" = "" ] && return 0
-            ;;
-        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
-            [ "$2" = "" ] && return 0
-            "$PATCHELF" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "$2"
-            ;;
         vendor/bin/mnld|\
         vendor/lib*/libaalservice.so|\
         vendor/lib64/libcam.utils.sensorprovider.so)
             [ "$2" = "" ] && return 0
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
-        vendor/lib*/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
-            [ "$2" = "" ] && return 0
-            "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
-            "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
-            ;;
         vendor/lib*/libmtkcam_stdutils.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
-            ;;
-        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "$2"
-            "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
             ;;
         system_ext/lib64/libsource.so)
             [ "$2" = "" ] && return 0
