@@ -38,8 +38,8 @@ vendor/lib/libnxp_extamp_intf.so
 vendor/lib/librt_extamp_intf.so
 vendor/lib/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib/libspeechparser_vendor.so
-vendor/lib64/vendor.mediatek.hardware.audio-V1-ndk.so
-vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
+vendor/lib/vendor.mediatek.hardware.audio-V1-ndk.so
+vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 
 # Audio Configs
 vendor/etc/audio_param/AudioParamOptions.xml
@@ -662,6 +662,7 @@ vendor/lib/egl/libMEOW_qt.so
 vendor/lib/egl/libMEOW_trace.so
 vendor/lib/hw/vulkan.mali.so
 vendor/lib/hw/vendor.mediatek.hardware.pq_aidl-impl.so
+vendor/lib/hw/android.hardware.graphics.allocator-V2-mediatek.so
 vendor/lib/libDefaultFpsActor.so
 vendor/lib/libFrameRecord.so
 vendor/lib/libNoFpsActor.so
@@ -719,6 +720,7 @@ vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/hw/hwcomposer.mt6768.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so
+vendor/lib64/hw/android.hardware.graphics.allocator-V2-mediatek.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libNoFpsActor.so
@@ -1006,9 +1008,13 @@ vendor/etc/seccomp_policy/mediaswcodec.policy
 vendor/bin/hw/android.hardware.media.c2-mediatek-64b;SYMLINK=vendor/bin/hw/android.hardware.media.c2-mediatek
 vendor/etc/init/android.hardware.media.c2-mediatek.rc
 vendor/etc/vintf/manifest/manifest_media_c2_default.xml
+vendor/lib64/libcodec2_aidl.so
+vendor/lib64/libcodec2_fsr.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
+vendor/lib64/libcodec2_vpp_fa_plugin.so
+vendor/lib64/libcodec2_vpp_mi_plugin.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
