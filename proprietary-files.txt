@@ -204,7 +204,6 @@ vendor/lib64/lib3a.gma.so
 vendor/lib64/lib3a.lce.so
 vendor/lib64/lib3a.log.so
 vendor/lib64/libJpgEncPipe.so
-vendor/lib64/libOpenCL.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
 vendor/lib64/libSonyIMX230PdafLibrary.so
 vendor/lib64/libSonyIMX230PdafLibraryWrapper.so
@@ -276,8 +275,6 @@ vendor/lib64/libfeature_fsc.so
 vendor/lib64/libfeature_lmv.so
 vendor/lib64/libfeature_rss.so
 vendor/lib64/libfeatureiodrv_mem.so
-vendor/lib64/libged.so
-vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgz_uree.so
 vendor/lib64/libheichal.so
 vendor/lib64/libimageio.so
@@ -666,7 +663,6 @@ vendor/lib/libgralloctypes_mtk.so
 vendor/lib/libhdrvideo.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
-vendor/lib/libladder.so
 vendor/lib/libmml.so
 vendor/lib/libpq_cust_base.so
 vendor/lib/libpqframework.so
@@ -724,8 +720,6 @@ vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libhdrvideo.so
-vendor/lib64/libion_mtk.so
-vendor/lib64/libion_ulit.so
 vendor/lib64/libladder.so
 vendor/lib64/libmml.so
 vendor/lib64/libpq_cust_base.so
@@ -986,17 +980,9 @@ vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libasn1c_core.so
 vendor/lib/libasn1c_mapi.so
 vendor/lib/libasn1c_mdmi.so
-vendor/lib/libh264dec_customize.so
-vendor/lib/libh264dec_sa.ca7.so
-vendor/lib/libh264dec_sd.ca7.so
-vendor/lib/libh264dec_se.ca7.so
-vendor/lib/libh264enc_sa.ca7.so
-vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libhevce_sb.ca7.android.so
 vendor/lib/libvp8dec_sa.ca7.so
 vendor/lib/libvp8enc_sa.ca7.so
-vendor/lib/libvp9dec_sa.ca7.so
-vendor/lib/libvpx.so
 vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv.so
@@ -1139,11 +1125,8 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Radio (IMS)
 vendor/bin/hw/vtservice_hidl
-vendor/bin/ipsec_mon
 vendor/bin/rcs_volte_stack
 vendor/bin/volte_clientapi_ua
-vendor/bin/volte_imsm_93
-vendor/bin/volte_md_status
 vendor/bin/volte_rcs_ua
 vendor/bin/ipsec_mon
 vendor/bin/volte_imsm_93
@@ -1159,14 +1142,10 @@ vendor/etc/init/init.volte_ua.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/lib/librcs_interface.so
 vendor/lib/libvolte_xdmc_shr.so
-vendor/lib/libvt_custom.so
 vendor/lib/libipsec_ims_shr.so
-vendor/lib/librcs_interface.so
 vendor/lib/librcs_volte_core.so
-vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libvt_custom.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
-vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
