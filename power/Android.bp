@@ -1,5 +1,5 @@
 cc_library_static {
-    name: "libperfmgr-ext-xiaomi",
+    name: "libperfmgr-ext-gale",
     vendor: true,
     srcs: [
         "power-mode.cpp",
